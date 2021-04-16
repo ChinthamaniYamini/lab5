@@ -1,0 +1,25 @@
+package com.cg.eis.exception;
+
+public class Employee {
+	
+	int salary;
+	public Employee() {
+		super();
+	}
+	public Employee(int salary) throws EmployeeException {
+		super();
+		this.salary=salary;
+		
+		
+			if(salary<3000)
+				throw new EmployeeException();
+			else
+				this.salary=salary;
+			}
+		
+		
+		
+		
+		
+	}
+	

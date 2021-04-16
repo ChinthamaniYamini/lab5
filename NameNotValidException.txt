@@ -1,0 +1,9 @@
+package day7task2;
+
+@SuppressWarnings("serial")
+public class NamenotValidException extends Exception {
+	public String toString() {
+		return ("name is not valid please enter ur first name and last name");
+	}
+
+}

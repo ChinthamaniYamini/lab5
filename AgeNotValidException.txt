@@ -1,0 +1,12 @@
+package day7task2;
+
+@SuppressWarnings("serial")
+public class AgeNotValidException extends Exception {
+	
+	public String toString() {
+		return ("Age is not valid please enter the age below 15");
+	}
+}
+
+
+

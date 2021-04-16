@@ -1,0 +1,51 @@
+package day7task2;
+
+import java.util.Scanner;
+
+public class MaincClass {
+
+	public static void main(String[] args) throws AgeNotValidException, NamenotValidException {
+		// TODO Auto-generated method stub
+		int age;
+		//String name;
+		//String lastname;
+		//String firstname;
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("enter age");
+		age=sc.nextInt();
+		
+		
+		System.out.println("enter firstname and second name with space");
+	    // name=sc.nextLine();
+		String name=new String(sc.nextLine());
+		 
+	 //String[] arr=name.split(" ");
+		
+		try {
+		Person  p= new Person(age,name);
+		
+		
+		}
+		catch(AgeNotValidException e1) {
+			System.out.println(e1);
+			
+		}
+		
+		try {
+			Person  p2= new Person(age,name);
+			
+		}
+		catch(NamenotValidException e2) {
+			System.out.println(e2);
+			
+		}
+		
+		
+
+	}
+	
+
+}

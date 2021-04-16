@@ -1,0 +1,38 @@
+package day7task2;
+
+public class Person  {
+	int age;
+	
+	String name;
+	public Person() {
+		super();
+	}
+	
+	public Person(int age,String name) throws AgeNotValidException, NamenotValidException {
+	super();
+	this.age=age;
+	
+	this.name=name;
+	
+	if(age>15) {
+			this.age=age;
+			System.out.println("your age is "+age);
+		
+	}
+	else
+
+		throw new AgeNotValidException();
+	
+	
+	
+	if(name.isEmpty())
+			throw new NamenotValidException();
+		else {
+			this.name=name;
+			System.out.println("your name is "+name);
+		}
+			
+	}
+	
+	
+}
